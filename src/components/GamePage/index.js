@@ -80,7 +80,7 @@ class GamePage extends Component{
             <form className="form-container" onSubmit={this.startThegame}>
                 <label htmlFor="username" className="label-text">Enter Your Name</label>
                 <br/>
-                <input type="text" id="username" value={username} className="input-value" onChange={this.getTheUsername}/>
+                <input required placeholder="Please Enter Your Name" type="text" id="username" value={username} className="input-value" onChange={this.getTheUsername}/>
                 <br/>
                 <button type="submit" className="play-btn">Play</button>
             </form>
@@ -155,7 +155,7 @@ class GamePage extends Component{
                     <h1>Mahjong Game</h1>
                     <div className="score-time-container">
                        <p>Score: <span>{score}</span></p>
-                       <p>Time:{minutes<10?`0${minutes}`:minutes}:{seconds<10?`0${seconds}`:seconds}</p>
+                       <p>Time: {minutes<10?`0${minutes}`:minutes}:{seconds<10?`0${seconds}`:seconds}</p>
                     </div>
                     <div className="game-board">
                         <p className="username">Welcome <span>{username}</span></p>
@@ -170,8 +170,8 @@ class GamePage extends Component{
         return(
             <>
             <h1 className="game-finished-heading">Game Finished!</h1>
-            <p className="final-result">Score:{score}</p>
-            <p className="time-taken">Time Taken:{minutes<10?`0${minutes}`:minutes}:{seconds<10?`0${seconds}`:seconds}</p>
+            <p className="final-result">Score: {score}</p>
+            <p className="time-taken">Time Taken: {minutes<10?`0${minutes}`:minutes}:{seconds<10?`0${seconds}`:seconds}</p>
             </>
         )
     }
