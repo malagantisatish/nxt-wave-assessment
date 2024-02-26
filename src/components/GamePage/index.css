@@ -1,0 +1,130 @@
+.game-page-container{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.entering-name-page{
+    width:80%;
+    height:60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-container{
+    width:80%;
+    height:80%;
+    border:solid 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius:8px;
+}
+
+.label-text{
+    font-size:24px;
+    font-family: "Roboto";
+    font-weight:700;
+
+}
+
+.input-value{
+    width:60%;
+    height:50px;
+    border-radius:8px;
+    font-size:20px;
+}
+
+.input-value:hover{
+    box-shadow: 4px 4px 4px 4px skyblue;
+}
+
+.play-btn{
+    background-color: blue;
+    border-width:0px;
+    border-radius:5px;
+    color:white;
+    height:50px;
+    width:100px;
+}
+
+.play-btn:hover{
+    box-shadow: 4px 4px 4px 4px skyblue;
+}
+
+.game-started-page{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.game-board{
+    height:70%;
+    width:90%;
+    border:solid 4px black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+}
+
+.score-time-container{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Roboto";
+    font-size:20px;
+    font-weight:bold;
+}
+
+.username{
+    align-self: flex-end;
+    font-weight:bold;
+    font-size:22px;
+    font-family:"Roboto";
+    padding-right:15px;
+}
+
+.tiles-container{
+    list-style: none;
+    width:100%;
+    height:100%;
+    padding:10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.game-finished-heading{
+    font-family: "Roboto";
+    font-size:28px;
+    font-weight:bold;
+
+}
+
+.final-result{
+    font-family: "Roboto";
+    font-size:28px;
+    font-weight:bold;
+    color:orange;
+}
+
+.time-taken{
+    font-family: "Roboto";
+    font-size:28px;
+    font-weight:bold;
+    color:orange;
+
+}

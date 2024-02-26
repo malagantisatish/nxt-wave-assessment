@@ -1,0 +1,17 @@
+.tile-container{
+    width:11%;
+    height:28%;
+    border:solid 3px black;
+}
+
+.tile-image{
+    height:60%;
+    width:60%
+}
+
+.tile-btn{
+    background-color: transparent;
+    border-width:0px;
+    width:100%;
+    height:100%;
+}
